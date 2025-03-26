@@ -61,3 +61,11 @@ main {
 footer {
     justify-self: center;
 }
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+#hasil {
+    margin-top: 20px;
+    font-weight: bold;
+}
