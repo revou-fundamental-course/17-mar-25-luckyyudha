@@ -1,1 +1,63 @@
 /- ini css eksternal
+
+.body {
+    background-color: whitesmoke;
+    font-family: math;
+
+}
+
+.main-header > h1 {
+    background-color: sandybrown;
+margin: 0px;
+padding: 16px;
+text-align: center;
+border: 3px;
+border: solid
+}
+
+main {
+    padding: 16px;
+    text-align: center;
+}
+    
+.nav-fitur {
+    display: flex;
+    flex-direction: column;
+    }
+
+.nav-fitur > a {
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 40%;
+    align-self: center;
+}
+
+.nav-fitur-active {
+    background-color: rgb(95, 62, 34);
+}
+.nav-fitur-nonactive {
+    background-color: saddlebrown;
+}
+
+.section-header {
+    background-color: sandybrown;
+    padding: 16px;
+    margin: 16px;
+}
+.section-image {
+    background-image: url(../assets/pengertian_persegi.PNG);
+    margin-bottom: 16px;
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    background-size: cover;
+    background-position: center;
+}
+.calculate-content {
+    border: 1px solid;
+    height: 300px;
+}
+footer {
+    justify-self: center;
+}
