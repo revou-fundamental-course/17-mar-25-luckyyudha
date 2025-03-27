@@ -7,6 +7,8 @@
      
     <! -- CSS External -- >
     <link rel="stylesheet"  href="css\style.css">
+
+    <script src="js\script.js"></script> 
 </head>
 <body>
     <header class="main-header">
@@ -19,52 +21,53 @@
 
         <P>Halo Sobat!, Selamat Datang di Katik.</P>
         <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
-
+        
         <div class="nav-fitur">
-            <a href="" class="nav-fitur-active"> Persegi</a>
-            <a href="" class="nav-fitur-nonactive"> Persegi Panjang</a>
+            <p>Pilih bangun datar:</p>
+        <select id="pilihan" onchange="tampilkanForm()">
+            <option value="none">-- Pilih --</option>
+            <option value="persegi">Persegi</option>
+            <option value="persegiPanjang">Persegi Panjang</option>
+        </select>
         </div>
 
-        <section>
-            <header class="section-header">
-                <h1> Luas Persegi</h1>
-            </header>
-            <div class="section-image">
-            </div>
-
-            <div class="calculate-content">
-                <h2>Hitung Luas Persegi</h2>
-                <label for="sisi">Masukkan panjang sisi:</label>
-                <input type="number" id="sisi" placeholder="Masukkan sisi">
-                <button onclick="hitungLuas()">Hitung</button>
+        <!--form untuk persegi-->
+        <div id="formPersegi" class="hidden">
+                <header class="section-header">
+                    <h1>Persegi</h1>
+                </header>
+                <div class="section-image">
+                </div>
+                <h2>Hitung Persegi</h2>
+                <input type="number" id="sisiPersegi" placeholder="Masukkan Sisi">
+                <button onclick="hitungLuasPersegi()">Hitung Luas</button>
+                <button onclick="hitungKelilingPersegi()">Hitung Keliling</button>
+                <p id="hasilPersegi"></p>
             
-                <p id="hasil"></p>
-                <script src="js\script.js"></script> 
+                 <button class="reset-btn" onclick="reset()">Reset</button>     
 
-            </div>
+        </div>
+            
+        <!--form untuk persegi panjang-->
+        <div id="formPersegiPanjang" class="hidden">
+                <header class="section-header">
+                    <h1>Persegi Panjang</h1>
+                </header>
+                <div class="section-image-panjang">
+    
+                </div>
+                <h2>Hitung Persegi Panjang</h2>
+                <input type="number" id="panjang" placeholder="Masukkan Panjang">
+                <input type="number" id="lebar" placeholder="Masukkan Lebar">
+                <button onclick="hitungLuasPersegiPanjang()">Hitung Luas</button>
+                <button onclick="hitungKelilingPersegiPanjang()">Hitung Keliling</button>
+                <p id="hasilPersegiPanjang"></p>
 
-        </section>
-
-        <section>
-            <header class="section-header">
-                <h1> Keliling Persegi</h1>
-            </header>
-            <div class="section-image">
-
-            </div>
-
-            <div class="calculate-content">
-                <h2>Hitung Keliling Persegi</h2>
-                <label for="sisi">Masukkan panjang sisi:</label>
-                <input type="number" id="sisi" placeholder="Masukkan sisi">
-                <button onclick="hitungKeliling()">Hitung</button>
-
-                <p id="hasil"></p>
-                <script src="js\script.js"></script>
+                <button class="reset-btn" onclick="reset()">Reset</button>   
 
             </div>
             
-        </section>
+        
     
 
     </main>

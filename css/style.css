@@ -1,5 +1,10 @@
 /- ini css eksternal
 
+.hidden {
+    display: none;
+}
+
+
 .body {
     background-color: whitesmoke;
     font-family: math;
@@ -7,12 +12,13 @@
 }
 
 .main-header > h1 {
-    background-color: sandybrown;
-margin: 0px;
-padding: 16px;
-text-align: center;
-border: 3px;
-border: solid
+    background-color: rgb(55, 195, 234);
+    margin: 0px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+   
 }
 
 main {
@@ -21,24 +27,23 @@ main {
 }
     
 .nav-fitur {
-    display: flex;
-    flex-direction: column;
-    }
-
-.nav-fitur > a {
-    color: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 40%;
-    align-self: center;
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+.nav-fitur > p {
+    font-size: x-large;
+    margin: 0px;  
+    padding: 16px;
+    text-align: center;
+    
+}
+    
 }
 
-.nav-fitur-active {
-    background-color: rgb(95, 62, 34);
-}
-.nav-fitur-nonactive {
-    background-color: saddlebrown;
-}
 
 .section-header {
     background-color: sandybrown;
@@ -46,10 +51,20 @@ main {
     margin: 16px;
 }
 .section-image {
-    background-image: url(../assets/pengertian_persegi.PNG);
+    background-image: url(../assets/persegi.webp);
     margin-bottom: 16px;
     width: 200px;
     height: 200px;
+    justify-self: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-image-panjang {
+    background-image: url(../assets/persegipanjang.jpg);
+    margin-bottom: 16px;
+    width: 220px;
+    height: 170px;
     justify-self: center;
     background-size: cover;
     background-position: center;
@@ -61,11 +76,37 @@ main {
 footer {
     justify-self: center;
 }
-input, button {
+
+input {
     padding: 10px;
-    font-size: 16px;
+    margin: 10px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-#hasil {
-    margin-top: 20px;
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
+
+#hasilLuas, #hasilKeliling {
     font-weight: bold;
+    font-size: 18px;
 }
