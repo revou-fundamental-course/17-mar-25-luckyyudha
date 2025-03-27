@@ -67,10 +67,7 @@ main {
     background-size: cover;
     background-position: center;
 }
-.calculate-content {
-    border: 1px solid;
-    height: 300px;
-}
+
 input {
     padding: 10px;
     margin: 10px;
@@ -81,7 +78,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #28a745;
+    background-color: rgb(48, 230, 48);
     color: white;
     border: none;
     cursor: pointer;
@@ -89,7 +86,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: green;
 }
 
 .reset-btn {
