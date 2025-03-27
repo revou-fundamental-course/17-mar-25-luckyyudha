@@ -1,4 +1,4 @@
-/- ini css eksternal
+
 
 .hidden {
     display: none;
@@ -12,7 +12,7 @@
 }
 
 .main-header > h1 {
-    background-color: rgb(55, 195, 234);
+    background-color: white;
     margin: 0px;
     padding: 16px;
     text-align: center;
@@ -42,11 +42,9 @@ main {
     
 }
     
-}
 
 
 .section-header {
-    background-color: sandybrown;
     padding: 16px;
     margin: 16px;
 }
@@ -73,10 +71,6 @@ main {
     border: 1px solid;
     height: 300px;
 }
-footer {
-    justify-self: center;
-}
-
 input {
     padding: 10px;
     margin: 10px;
@@ -106,7 +100,15 @@ button:hover {
     background-color: #c82333;
 }
 
-#hasilLuas, #hasilKeliling {
-    font-weight: bold;
-    font-size: 18px;
+
+
+
+footer {
+    background-color: white;
+    font-size: small;
+    margin: 0px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
 }
+
